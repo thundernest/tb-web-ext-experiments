@@ -174,7 +174,16 @@
         "name": "synchronize",
         "async": true,
         "type": "function",
-        "parameters": []
+        "parameters": [
+          {
+            "optional": true,
+            "name": "ids",
+            "choices": [
+              { "type": "string" },
+              { "type": "array", "items": { "type": "string" } }
+            ]
+          }
+        ]
       }
     ],
     "events": [
