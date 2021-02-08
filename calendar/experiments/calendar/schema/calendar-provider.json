@@ -64,6 +64,15 @@
         "parameters": [
           { "name": "calendar", "$ref": "calendar.calendars.Calendar" },
           { "name": "item", "$ref": "calendar.items.CalendarItem" }
+        ],
+        "extraParameters": [
+          {
+            "type": "object",
+            "optional": true,
+            "properties": {
+              "returnFormat": { "$ref": "calendar.items.ReturnFormat", "optional": true }
+            }
+          }
         ]
       },
       {
